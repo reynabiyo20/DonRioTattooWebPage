@@ -1,57 +1,114 @@
-
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: TitleFont;
-    font-size: 15px;
-    background-color: #127cab;
-    color: #344b3c;
-}
 @font-face {
     font-family: TitleFont;
     src: url(SpecialElite-Regular.ttf);
 }
-@font-face {
-    font-family: SubTitleFont;
-    src: url(ShadowsIntoLight-Regular.ttf);
-}  
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #B4C1BE;
+    color: white;
+    font-size: 22px;
+    font-family: titleFont;
+
+}
+
+li, a, button {
+    font-family: TitleFont;
+    font-weight: bolder;
+    color: rgb(2, 8, 20);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+header {
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    background-color:#4E4B4F;
+}
+
+.nav_links {
+    list-style: none;
+    font-size: 20px;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 190px;
+    width: fit-content;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color:#0e76d8;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #B4C1BE;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: auto;
+}
+
+button:hover {
+    background-color:  #0e76d8;
+}
+
 
 .titleBox {
-    color: rgb(29, 28, 28);
-    background-image: url("images/cover_cropped.jpg");
+    background-image: url("images/Backdrop.png");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: #a1a444 ;
+    border:#647679;
     border-style: outset;
     border-radius: 5px;
 }
 
+
 h1 {
-    font-family: TitleFont;
-    font-size: 70px;
+    font-family: titleFont;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
 }
 
+
 h2 {
-    font-family: SubTitleFont;
+    font-family: titleFont;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
-    padding-top: 70px;
-} 
+    color: black;
+}
 
 h3 {
     font-family: TitleFont;
-    font-weight: bold;
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
 }
 
+/* .image {
+    height: 10;
+    width: 80px;
+} */
 .mainBox {
+    display: flex;
+    flex-flow: wrap;
+    align-content: space-around;
     justify-content: center;
-    background-color:#a3d9ec;
+    background-color:#3D4550;
     margin: solid;
     margin-top: 10px;
     margin-left: 10px;
@@ -59,10 +116,9 @@ h3 {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 15px;
-    border: #a1a444;
+    border: #647679;
     border-style: solid;
     border-radius: 10px;
-    line-height: 30px;
 }
 
 .indent {
@@ -72,32 +128,33 @@ h3 {
 .first-letter {
     initial-letter: 50;
     font-size: 70px;
-    color: darkslategrey;
+    color: black;
     font-family: TitleFont;
     font-weight: bolder;
     font-feature-settings: "vjmo";
 }
 
 #quote {
-    color: #a1a444;
-    font-size: 12px;
+    color: black;
+    font-size: 20px;
     font-weight: bolder;
     text-align: right;
     }
 
-#personName {
-    color: #a1a444;
+/* #personName {
+    color: black;
     font-size: 14px;
     font-weight: bolder;
     text-align: right;
-}      
+}       */
 
-.adventureBox {
+.galleryBox {
     display: flex;
     flex-wrap: wrap;
+    align-content: space-around;
     flex-direction: row;
-    justify-content: center;
-    background-color:#a3d9ec;
+    justify-content: left;
+    background-color:#3D4550;
     margin: solid;
     margin-top: 10px;
     margin-left: 10px;
@@ -105,36 +162,40 @@ h3 {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 15px;
-    border: #a1a444;
+    padding-bottom: 15px;
+    border:#647679;
     border-style: solid;
     border-radius: 10px;
     line-height: 30px;
 }
-.adventureTitle {
+.title {
     text-align: center;
     font-size: 35px;
-    color: #344b3c;
+    color: white;
     flex: 100%;
 }
 
-.adventureDescription {
+.description {
     position: relative;
     height: 200px;
     width: 400px;
     float: left;
+    flex-wrap: wrap;
     margin: 4px;
     background-size: 100%;
     background-position: center;
     transition: .5s;
     border-radius: 10px;
+    font-family: TitleFont;
+    font-size: 20px;
 }
 
-.adventureDescription:hover {
+.description:hover {
     background-size: 110%;
     border-radius: 10px;
 }
 
-.adventureDescription:after{
+.description:after {
     position: absolute;
     top: 90%;
     bottom: 0;
@@ -144,7 +205,7 @@ h3 {
     overflow: hidden;
     background-color: white;
     opacity: .8;
-    color: rgb(26, 53, 11);
+    color:black;
     font-weight: bolder;
     padding: 0 8px;
     content: attr(data-text);
@@ -152,17 +213,32 @@ h3 {
     border-radius: 10px;
 }
 
-.adventureDescription:hover::after {
+.description:hover::after {
     top: 0;
     padding: 8px;
     background-color: rgba(0,0,0,0,6);
     border-radius: 10px;
 }
 
-.adventureDescription::first-line {
-    color: #fff;
+.description::first-line {
+    color: black;
     font-weight: bold;
     font-size: 1.5em;
+}
+
+.contactInfo {
+    margin: solid;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    border: #647679;
+    border-style: solid;
+    border-radius: 10px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
 }
 
 footer {
@@ -172,16 +248,17 @@ footer {
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 15px;
-    border: #a1a444;
+    border: #647679;
     border-style: solid;
     border-radius: 10px;
     line-height: 20px;
     text-align: center;
     color: white;
+    font-size: 10px;
 }
 
 #copyright {
-    background-color: rgb(151, 167, 81);
+    background-color:#3D4550;
     font-size: 25px;
 }
 
@@ -193,9 +270,10 @@ footer {
 
 .photoDescription {
     position: relative;
+    justify-content: space-evenly;
     height: 300px;
     width: 400px;
-    float: left;
+    float: right;
     background-size: 100%;
     background-position: center;
     transition: .5s;
