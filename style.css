@@ -99,10 +99,6 @@ h3 {
     font-size: 25px;
 }
 
-/* .image {
-    height: 10;
-    width: 80px;
-} */
 .mainBox {
     display: flex;
     flex-flow: wrap;
