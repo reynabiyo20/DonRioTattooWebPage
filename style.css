@@ -137,19 +137,20 @@ h3 {
     text-align: right;
     }
 
-/* #personName {
-    color: black;
-    font-size: 14px;
-    font-weight: bolder;
-    text-align: right;
-}       */
+
+#personName {
+        color: white;
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: right;
+}     
 
 .galleryBox {
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     background-color:#3D4550;
     margin: solid;
     margin-top: 10px;
