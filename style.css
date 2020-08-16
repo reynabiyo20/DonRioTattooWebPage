@@ -16,7 +16,7 @@ body, html {
 li, a, button {
     font-family: TitleFont;
     font-weight: bolder;
-    color: rgb(2, 8, 20);
+    color: orangered;
     text-decoration: none;
     font-size: 20px;
 }
@@ -48,26 +48,27 @@ header {
 }
 
 .nav_links li a:hover {
-    color:#1fb6b6;
+    color: rgb(255, 200, 49);
 }
 
-button {
+/* button {
     padding: 9px 25px;
     background-color: #B4C1BE;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     margin-left: auto;
-}
+} */
 
 button:hover {
-    background-color: #1fb6b6;
+    background-color: rgb(255, 200, 49);
 }
 
 
 .titleBox {
-    background-image: url("images/Backdrop.png");
-    height: 100%;
+    background-image: url("images/logo16.png");
+    height: 180%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,20 +78,11 @@ button:hover {
 }
 
 
-h1 {
-    font-family: titleFont;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-}
-
-
 h2 {
     font-family: titleFont;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
-    color: black;
 }
 
 h3 {
@@ -139,7 +131,7 @@ h3 {
 
 
 #personName {
-        color: white;
+        color: rgb(255, 200, 49);
         font-size: 20px;
         font-weight: bolder;
         text-align: right;
@@ -160,7 +152,7 @@ h3 {
     padding-right: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
-    border:#647679;
+    border:rgb(255, 200, 49);
     border-style: solid;
     border-radius: 10px;
     line-height: 30px;
@@ -168,7 +160,7 @@ h3 {
 .title {
     text-align: center;
     font-size: 35px;
-    color: white;
+    color: orangered;
     flex: 100%;
 }
 
@@ -230,7 +222,7 @@ h3 {
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 15px;
-    border: #647679;
+    border: rgb(255, 200, 49)
     border-style: solid;
     border-radius: 10px;
     line-height: 20px;
@@ -245,7 +237,7 @@ footer {
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 15px;
-    border: #647679;
+    border: rgb(255, 200, 49);
     border-style: solid;
     border-radius: 10px;
     line-height: 20px;
