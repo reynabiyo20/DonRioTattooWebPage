@@ -67,14 +67,15 @@ button:hover {
 
 .titleBox {
     background-image: url("images/logo16.png");
-    height: 180%;
+    height: 800px;
     width: 100%;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     border:#647679;
     border-style: outset;
     border-radius: 5px;
+    background-color: black;
 }
 
 
