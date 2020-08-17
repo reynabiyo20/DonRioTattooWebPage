@@ -231,6 +231,35 @@ h3 {
     color: white;
 }
 
+
+.tooltip {
+    position: relative;
+    background-image: url("images/emaillogo.jpg");
+    background-size: 82px 86px;
+    background-repeat: no-repeat;
+    font-weight: lighter;
+    color: transparent;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
 footer {
     margin: solid;
     margin-left: 10px;
