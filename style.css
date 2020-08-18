@@ -3,10 +3,62 @@
     src: url(SpecialElite-Regular.ttf);
 }
 
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: orangered;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main{
+    transition: margin-left .5s;
+    padding: 16px;
+    position: fixed;
+    background-color: black;
+  }
+
+  #main:hover {
+      color: orangered;
+  }
+  
+
 body, html {
+    transition: .5s;
     height: 100%;
     margin: 0;
-    background-color: #B4C1BE;
+    background-color: black;
     color: white;
     font-size: 22px;
     font-family: titleFont;
@@ -16,52 +68,8 @@ body, html {
 li, a {
     font-family: TitleFont;
     font-weight: bolder;
-    color: orangered;
     text-decoration: none;
     font-size: 20px;
-}
-
-.navBar {
-    display: flex;
-    justify-content: space-evenly;
-    position: fixed;
-    width: 100%;
-    height: auto;
-    background-color:#4E4B4F;
-}
-
-.nav_links {
-    list-style: none;
-    /* font-size: 25px; */
-}
-
-.nav_links li {
-    display: inline-block;
-    flex-wrap: wrap;
-    padding-right: 150px;
-    padding-left: 150px;
-    /* width: fit-content; */
-}
-
-.nav_links li a {
-    transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover {
-    color: rgb(255, 200, 49);
-}
-
-/* button {
-    padding: 9px 25px;
-    background-color: #B4C1BE;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    margin-left: auto;
-} */
-
-button:hover {
-    background-color: rgb(255, 200, 49);
 }
 
 
@@ -73,7 +81,6 @@ button:hover {
     background-repeat: no-repeat;
     background-size: contain;
     border:#647679;
-    border-style: outset;
     border-radius: 5px;
     background-color: black;
     border-color: black
@@ -216,21 +223,6 @@ h3 {
     font-weight: bold;
     font-size: 1.5em;
 }
-/* 
-.contactInfo {
-    margin: solid;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 15px;
-    border: rgb(255, 200, 49);
-    border-style: solid;
-    border-radius: 10px;
-    line-height: 20px;
-    align-content: center;
-    color: white;
-} */
 
 
 .tooltip {
@@ -250,8 +242,6 @@ h3 {
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-  
-    /* Position the tooltip */
     position: absolute;
     z-index: 1;
   }
