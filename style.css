@@ -76,6 +76,7 @@ button:hover {
     border-style: outset;
     border-radius: 5px;
     background-color: black;
+    border-color: black
 }
 
 
@@ -105,7 +106,7 @@ h3 {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 15px;
-    border: #647679;
+    border: rgb(255, 200, 49);
     border-style: solid;
     border-radius: 10px;
 }
@@ -215,7 +216,7 @@ h3 {
     font-weight: bold;
     font-size: 1.5em;
 }
-
+/* 
 .contactInfo {
     margin: solid;
     margin-left: 10px;
@@ -227,9 +228,9 @@ h3 {
     border-style: solid;
     border-radius: 10px;
     line-height: 20px;
-    text-align: justify;
+    align-content: center;
     color: white;
-}
+} */
 
 
 .tooltip {
@@ -290,7 +291,7 @@ footer {
 .photoDescription {
     position: relative;
     justify-content: space-evenly;
-    height: 300px;
+    height: 600px;
     width: 400px;
     float: right;
     background-size: 100%;
