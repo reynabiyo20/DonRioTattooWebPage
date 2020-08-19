@@ -307,19 +307,19 @@ footer {
     white-space: pre-wrap;
     overflow: hidden;
     color: black;
-    background-color: white;
+    background-color: rgb(233, 134, 54);
     opacity: .7;
     font-weight: bolder;
     text-align: center;
     font-size: 14px;
     padding: 0 8px;
-    content: attr(data-text);
+    content: attr(data-text);   
     transition: .5s;
     border-radius: 10px;
 }
 
 .photoDescription:hover::after {
-    top: 80%;
+    top: 70%;
     bottom: 0;
     left: 0;
     right: 0;
