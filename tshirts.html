@@ -6,9 +6,34 @@
    <title>Logo Shirts</title>
    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<div class="mainBox">
+
+<script>
+   function openNav() {
+     document.getElementById("mySidenav2").style.width = "250px";
+     document.getElementById("main").style.marginLeft = "250px";
+     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+   }
+   
+   function closeNav() {
+     document.getElementById("mySidenav2").style.width = "0";
+     document.getElementById("main").style.marginLeft= "0";
+   }
+   </script>
+
+<div id="main">
+   <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; Menu </span>
+</div>
+
+<div id="mySidenav2" class="sidenav2">
+   <a class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="size.html" target="blank">Size Chart</a>
+   <a href="price.html" target="blank">Price Chart</a>
+ </div>
+
+<div class="mainBox">    
 <h2>T-shirt Shop</h2>
 </div>
+
 <body>
 <div class="galleryBox">
     <div class="photoDescription" style="background-image:url(images/Tshirts/Black_Logo1.jpg)" data-text="XS: Php. 200
@@ -74,7 +99,6 @@
 </div>
 </body>
 <br>
-</div>
 <footer id="copyright">&copy; Copyright 2020
    <p><a href="reynabiyo20@gmail.com">reynabiyo20@gmail.com</a></p>
 </footer>

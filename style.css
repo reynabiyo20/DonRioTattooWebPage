@@ -333,3 +333,63 @@ footer {
     background-color: rgba(0,0,0,0,6);
     border-radius: 10px;
 }
+
+ table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    justify-content: center;
+    width: 500px;
+    height: 200px;  
+  }
+  
+  th {
+      color: yellow;
+      font-size: larger;
+  }
+
+  td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    font-size: 15px;
+    color: black;
+  }
+  
+  tr {
+    background-color: gray;
+  }
+
+    
+  .sidenav2 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav2 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav2 a:hover {
+    color: orangered;
+  }
+  
+  .sidenav2 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
