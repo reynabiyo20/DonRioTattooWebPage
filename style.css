@@ -80,7 +80,7 @@ li, a {
 
 
 .titleBox {
-    background-image: url("images/Tshirts/FinalLogo.png");
+    background-image: url("images/LOGO/FinalLogo.png");
     height: 100%;
     width: 100%;
     background-position: bottom;
@@ -105,6 +105,7 @@ h3 {
     text-align: center;
     font-size: 25px;
 }
+
 
 .mainBox {
     display: flex;
@@ -172,11 +173,19 @@ h3 {
     border-radius: 10px;
     line-height: 30px;
 }
+
 .title {
     text-align: center;
     font-size: 35px;
     color: orangered;
     flex: 100%;
+}
+
+.subTitle {
+  text-align: center;
+  font-size: 15px;
+  color: orangered;
+  flex: 100%;
 }
 
 .description {
